@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AC大会草稿</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Main styles */
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+            .text {
+            fill: none;
+            stroke-width: 6;
+            stroke-linejoin: round;
+            stroke-dasharray: 70 330;
+            stroke-dashoffset: 0;
+            -webkit-animation: stroke 6s infinite linear;
+            animation: stroke 6s infinite linear;
+            }
+
+            .text:nth-child(5n + 1) {
+            stroke: #F2385A;
+            -webkit-animation-delay: -1.2s;
+            animation-delay: -1.2s;
+            }
+            .text:nth-child(5n + 2) {
+            stroke: #F5A503;
+            -webkit-animation-delay: -2.4s;
+            animation-delay: -2.4s;
+            }
+
+            .text:nth-child(5n + 3) {
+            stroke: #E9F1DF;
+            -webkit-animation-delay: -3.6s;
+            animation-delay: -3.6s;
+            }
+
+            .text:nth-child(5n + 4) {
+            stroke: #56D9CD;
+            -webkit-animation-delay: -4.8s;
+            animation-delay: -4.8s;
+            }
+
+            .text:nth-child(5n + 5) {
+            stroke: #3AA1BF;
+            -webkit-animation-delay: -6s;
+            animation-delay: -6s;
+            }
+
+            @-webkit-keyframes stroke {
+            100% {
+                stroke-dashoffset: -400;
+            }
+            }
+
+            @keyframes stroke {
+            100% {
+                stroke-dashoffset: -400;
+            }
+            }
+
+            /* Other styles */
+            html, body {
+            height: 100%;
+            }
+
+            body {
+            background: #111;
+            background-size: .2em 100%;
+            font: 14.5em/1 Open Sans, Impact;
+            margin: 0;
+            }
+
+            svg {
+                
+            }
+</style>
+        <style>
+            #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-image: url('./background2.png');
+                
+                background-size: 100% auto;
+            }
+            #my-svg {
+                width: 600px;
+                stroke: #fff;
+                stroke-linejoin: miter;
+                stroke-linecap: round;
+                stroke-width: 2;
+                fill: transparent;
+                stroke-dasharray: 5, 10;
+                
+            }
+            @keyframes fillWhite{
+                100%{
+                    fill: white;
+                    color: white;
+                }
+            }
+            #date, #button {
+                font-size: 36px;
+                font-weight: 800;
+                color: transparent;
+                margin-top: 50px;
+                animation: fillWhite, linear;
+                animation-duration: 1s;
+                animation-delay: 2s;
+            }
+            #button {
+                width: 300px;
+                text-align: center;
+            
+                padding: 10px 10px;
+                border: 2px solid #fff;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <svg width="400" height="300" viewBox="0 0 600 300">
+
+                <!-- Symbol -->
+                <symbol id="s-text">
+                    <text text-anchor="middle"
+                        x="50%" y="50%" dy=".35em">
+                    AC
+                    </text>
+                </symbol>  
+
+                <!-- Duplicate symbols -->
+                <use xlink:href="#s-text" class="text"
+                    ></use>
+                <use xlink:href="#s-text" class="text"
+                    ></use>
+                <use xlink:href="#s-text" class="text"
+                    ></use>
+                <use xlink:href="#s-text" class="text"
+                    ></use>
+                <use xlink:href="#s-text" class="text"
+                    ></use>
+
+            </svg>
+            
+            <svg id="my-svg" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399.71 38.36"><title>titleText</title><path d="M194.81,126.9h-6.33l-2-6.24h-9.9l-2,6.24h-6.29l10-27.23H185Zm-9.74-10.72L182,106.74a10.48,10.48,0,0,1-.42-2.37h-.16a10,10,0,0,1-.47,2.3l-3.11,9.51Z" transform="translate(-168.24 -97.67)"/><path d="M197.6,126.9V98.12h5.66V126.9Z" transform="translate(-168.24 -97.67)"/><path d="M208.25,126.9V98.12h5.66V126.9Z" transform="translate(-168.24 -97.67)"/><path d="M217.83,117.27a9.93,9.93,0,0,1,2.87-7.54,10.73,10.73,0,0,1,7.73-2.74,10.2,10.2,0,0,1,7.45,2.7,9.68,9.68,0,0,1,2.76,7.25,10.85,10.85,0,0,1-18,7.73A9.85,9.85,0,0,1,217.83,117.27Zm5.75-.07q0,5.82,4.75,5.82,4.55,0,4.55-6,0-5.7-4.59-5.7a4.22,4.22,0,0,0-3.47,1.53A6.7,6.7,0,0,0,223.58,117.2Z" transform="translate(-168.24 -97.67)"/><path d="M260.83,107.46l-8,21.18Q250,136,244.45,136a10,10,0,0,1-3.41-.46V131a5,5,0,0,0,2.51.65,3.32,3.32,0,0,0,3.27-2.25l1.07-2.55L240,107.46h6.29l3.8,12.18a13.21,13.21,0,0,1,.51,2.48h.11a16.27,16.27,0,0,1,.58-2.44l3.88-12.22Z" transform="translate(-168.24 -97.67)"/><path d="M274.84,126.67a8.35,8.35,0,0,1-3.88.7q-6.19,0-6.19-6.5v-9.18h-3.2v-4.24h3.2v-4.27l5.64-1.62v5.89h4.43v4.24h-4.43v8.19q0,3.11,2.46,3.11a4.07,4.07,0,0,0,2-.56Z" transform="translate(-168.24 -97.67)"/><path d="M295.4,118.78h-12.8q.3,4.52,5.45,4.52a10.27,10.27,0,0,0,5.68-1.58v4.17a14.13,14.13,0,0,1-7,1.49,9.66,9.66,0,0,1-7.22-2.62,10,10,0,0,1-2.58-7.29,10.58,10.58,0,0,1,2.74-7.57,9.07,9.07,0,0,1,6.89-2.91,8.39,8.39,0,0,1,6.46,2.5,9.71,9.71,0,0,1,2.33,6.88Zm-5.29-3.55q0-4.36-3.53-4.36a3.46,3.46,0,0,0-2.58,1.2,5.65,5.65,0,0,0-1.41,3.16Z" transform="translate(-168.24 -97.67)"/><path d="M299.57,108.64a12.5,12.5,0,0,1,3.52-1.2,19,19,0,0,1,3.77-.46q8.16,0,8.16,8.17V126.9h-5.4v-2.83h-.07a6.39,6.39,0,0,1-5.82,3.3,6.16,6.16,0,0,1-4.42-1.57,5.61,5.61,0,0,1-1.66-4.28q0-5.59,6.66-6.5l5.34-.72q0-3.39-3.53-3.39a11.39,11.39,0,0,0-6.56,2.11Zm6.42,9.46q-3.08.4-3.08,2.78a2.24,2.24,0,0,0,.75,1.76,2.91,2.91,0,0,0,2,.67,3.71,3.71,0,0,0,2.87-1.23,4.36,4.36,0,0,0,1.13-3.06v-1.39Z" transform="translate(-168.24 -97.67)"/><path d="M350.39,126.9h-5.66V115.81q0-4.46-3.25-4.46A3,3,0,0,0,339,112.7a5.4,5.4,0,0,0-1,3.3v10.9H332.3V115.67q0-4.32-3.22-4.32a3,3,0,0,0-2.56,1.29,5.6,5.6,0,0,0-1,3.42V126.9h-5.68V107.46h5.68v3h.07a7.14,7.14,0,0,1,2.71-2.59,7.3,7.3,0,0,1,3.55-.92,5.57,5.57,0,0,1,5.61,3.67A7.22,7.22,0,0,1,344,107q6.35,0,6.35,7.84Z" transform="translate(-168.24 -97.67)"/><path d="M385.95,125.91a17.65,17.65,0,0,1-7.75,1.46q-6.15,0-9.76-3.68a13.41,13.41,0,0,1-3.61-9.82,14.42,14.42,0,0,1,4-10.56,14,14,0,0,1,10.42-4.1,18.69,18.69,0,0,1,6.68,1v5.61a12.14,12.14,0,0,0-6.26-1.62,8.33,8.33,0,0,0-6.38,2.55,9.34,9.34,0,0,0-2.39,6.66,9.11,9.11,0,0,0,2.27,6.45,8,8,0,0,0,6.13,2.44,12.83,12.83,0,0,0,6.63-1.76Z" transform="translate(-168.24 -97.67)"/><path d="M389,117.27a9.93,9.93,0,0,1,2.87-7.54,10.73,10.73,0,0,1,7.73-2.74,10.2,10.2,0,0,1,7.45,2.7,9.68,9.68,0,0,1,2.76,7.25,10.85,10.85,0,0,1-18,7.73A9.85,9.85,0,0,1,389,117.27Zm5.75-.07q0,5.82,4.75,5.82,4.55,0,4.55-6,0-5.7-4.59-5.7a4.22,4.22,0,0,0-3.47,1.53A6.7,6.7,0,0,0,394.79,117.2Z" transform="translate(-168.24 -97.67)"/><path d="M432.34,126.9H426.7V116.05q0-4.71-3.39-4.71a3.39,3.39,0,0,0-2.69,1.26,4.77,4.77,0,0,0-1.07,3.21V126.9h-5.68V107.46h5.68v3.09h.07a6.85,6.85,0,0,1,6.26-3.57q6.47,0,6.47,8Z" transform="translate(-168.24 -97.67)"/><path d="M449.53,102.5a6,6,0,0,0-2.2-.46q-2.92,0-2.92,3.23v2.18h4.43v4.24h-4.43V126.9h-5.68V111.69h-3.25v-4.24h3.25V105a6.86,6.86,0,0,1,2.16-5.31,8.06,8.06,0,0,1,5.68-2,9.92,9.92,0,0,1,3,.37Z" transform="translate(-168.24 -97.67)"/><path d="M469,118.78h-12.8q.3,4.52,5.45,4.52a10.27,10.27,0,0,0,5.68-1.58v4.17a14.13,14.13,0,0,1-7,1.49,9.66,9.66,0,0,1-7.22-2.62,10,10,0,0,1-2.58-7.29,10.58,10.58,0,0,1,2.74-7.57,9.07,9.07,0,0,1,6.89-2.91,8.39,8.39,0,0,1,6.46,2.5,9.71,9.71,0,0,1,2.33,6.88Zm-5.29-3.55q0-4.36-3.53-4.36a3.46,3.46,0,0,0-2.58,1.2,5.65,5.65,0,0,0-1.41,3.16Z" transform="translate(-168.24 -97.67)"/><path d="M485.13,112.61a5,5,0,0,0-2.51-.6,3.66,3.66,0,0,0-3.07,1.48,6.52,6.52,0,0,0-1.13,4.06v9.35h-5.68V107.46h5.68v3.66h.07q1.41-4,5.12-4a4,4,0,0,1,1.53.23Z" transform="translate(-168.24 -97.67)"/><path d="M505.08,118.78h-12.8q.3,4.52,5.45,4.52a10.27,10.27,0,0,0,5.68-1.58v4.17a14.13,14.13,0,0,1-7,1.49,9.66,9.66,0,0,1-7.22-2.62,10,10,0,0,1-2.58-7.29,10.58,10.58,0,0,1,2.74-7.57,9.07,9.07,0,0,1,6.89-2.91,8.39,8.39,0,0,1,6.46,2.5,9.71,9.71,0,0,1,2.33,6.88Zm-5.29-3.55q0-4.36-3.53-4.36a3.46,3.46,0,0,0-2.58,1.2,5.65,5.65,0,0,0-1.41,3.16Z" transform="translate(-168.24 -97.67)"/><path d="M527.24,126.9H521.6V116.05q0-4.71-3.39-4.71a3.39,3.39,0,0,0-2.69,1.26,4.77,4.77,0,0,0-1.07,3.21V126.9h-5.68V107.46h5.68v3.09h.07a6.85,6.85,0,0,1,6.26-3.57q6.47,0,6.47,8Z" transform="translate(-168.24 -97.67)"/><path d="M546.67,126.18a11.57,11.57,0,0,1-5.8,1.2,9.79,9.79,0,0,1-7.19-2.71,9.42,9.42,0,0,1-2.74-7,10.36,10.36,0,0,1,3-7.81,10.85,10.85,0,0,1,7.88-2.86,10.25,10.25,0,0,1,4.92.91v4.87a7.06,7.06,0,0,0-4.25-1.42,5.63,5.63,0,0,0-4.17,1.58,5.89,5.89,0,0,0-1.57,4.34,5.79,5.79,0,0,0,1.49,4.21,5.4,5.4,0,0,0,4.06,1.54,7.9,7.9,0,0,0,4.43-1.44Z" transform="translate(-168.24 -97.67)"/><path d="M568,118.78h-12.8q.3,4.52,5.45,4.52a10.27,10.27,0,0,0,5.68-1.58v4.17a14.13,14.13,0,0,1-7,1.49,9.66,9.66,0,0,1-7.22-2.62,10,10,0,0,1-2.58-7.29,10.58,10.58,0,0,1,2.74-7.57,9.07,9.07,0,0,1,6.89-2.91,8.39,8.39,0,0,1,6.46,2.5,9.71,9.71,0,0,1,2.33,6.88Zm-5.29-3.55q0-4.36-3.53-4.36a3.46,3.46,0,0,0-2.58,1.2,5.65,5.65,0,0,0-1.41,3.16Z" transform="translate(-168.24 -97.67)"/></svg>                
+            <div id="date">2017-12-20</div>
+            <div id="button">
+                快速購票
+            </div>
+        </div>
+        <script src="./vivus.min.js"></script>
+        <script>
+            var mySVG = new Vivus('my-svg', {duration: 200}, function(){
+                console.log('animation done');
+                document.querySelector('#my-svg').style.animation = 'fillWhite linear';
+            });
+            console.table(mySVG.map)
+        </script>
+    </body>
+</html>
